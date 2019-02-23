@@ -11,7 +11,7 @@ class MyHandler(BaseHTTPRequestHandler):
     self.send_response(200)
     self.send_header('Content-type','image/png')
     self.end_headers()
-    with open('komodo_logo.svg', 'rb') as f:
+    with open('logo2.jpg', 'rb') as f:
       self.wfile.write(f.read())
 
 try:
